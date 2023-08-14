@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: #0338388a;
+}
+.container {
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.site-header__title {
+    margin-top: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 5px 2px rgba(255,255,255,0.58);
+}
+.site-header__btn {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-image: url("./images/images2.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-color: #fff;
+    border: 2px solid #02021bbf;
+    box-shadow: 10px 4px 8px -4px rgba(2,2,27,1);
+    -webkit-box-shadow: 10px 4px 8px -4px rgba(2,2,27,1);
+    -moz-box-shadow: 10px 4px 8px -4px rgba(2,2,27,1);
+    transition: transform 0.5s ease;
+}
+.recording {
+    background-image: url("./images/images1.png");
+}
+.site-header__btn:active {
+    transform:scale(0.94);
+    box-shadow: 14px 5px 12px -9px rgba(2,2,27,0.97);
+    -webkit-box-shadow: 14px 5px 12px -9px rgba(2,2,27,0.97);
+    -moz-box-shadow: 14px 5px 12px -9px rgba(2,2,27,0.97);
+}
+.site-header__btn::after {
+    position: absolute;
+    top: 105%;
+    left: 12px;
+    color: #fff;
+    font-size: 20px;
+    content: "Speak";
+}
+.hero__wrapper {
+    margin: 100px auto;
+    width: 100%;
+    
+}
+.hero__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding-left:0px;
+    padding: 10px;
+    border: 2px solid #02021bbf;
+    border-radius: 10px;
+    list-style: none;
+    box-shadow: 6px 4px 21px 22px #02021bbf;
+    -webkit-box-shadow: 6px 4px 21px 22px #02021bbf;
+    -moz-box-shadow: 6px 4px 21px 22px #02021bbf;
+    
+}
+.hero__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding:10px 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: #02021bdc;
+    color: #e0e0e0d5;
+    box-shadow: 10px 10px 5px 0px #02021bdc;
+    -webkit-box-shadow: 10px 10px 5px 0px #02021bdc;
+    -moz-box-shadow: 10px 10px 5px 0px #02021bdc;
+    transition: transform 0.5s ease;
+}
+.hero__item:hover {
+    transform: scale(1.009);
+    border-color: rgb(9, 255, 0);
+}
+.hero__item:active {
+    transform: scale(0.95);
+    box-shadow: 10px 10px 5px 3px #02021bbf;
+    -webkit-box-shadow: 10px 10px 5px 3px #02021bbf;
+    -moz-box-shadow: 10px 10px 5px 3px #02021bbf;
+    border-color: #ff0000;
+    color: #ff0000;   
+}
+.hero__span {
+    margin-left: auto;
+}
+.hero__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    
+}
+.hero__input {
+    padding: 12px 20px;
+    border: none;
+    color:#fff ;
+    /* border-bottom:1px solid #fff; */
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 4px 10px 12px 0px #02021bbf;
+    -webkit-box-shadow: 4px 10px 12px 0px #02021bbf;
+    -moz-box-shadow: 4px 10px 12px 0px #02021bbf;
+}
+.hero__input::placeholder {
+    color: #fff;
+    opacity: 0.6;
+    font-family: cursive;
+}
+.hero__input--tack {
+    min-width:153px;
+    width: 45%;
+    display: flex;
+    flex-grow: 3;
+}
+.hero__input--time {
+    min-width:109px;
+    width: 10%;
+    display: flex;
+    flex-grow: 2;
+}
+.hero__form-btn{
+    width: 20%;
+    text-align: center;
+    max-width: 150px;
+    display: flex;
+    flex-grow: 1;
+    justify-content:center;
+    padding: 12px 10px;
+    border-radius: 10px;
+    background-color: #005c00;
+    color: #fff;
+}
+.hero__delbtn {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    background-image: url("./images/trash.png");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+}
+.hero__editbtn {
+    width: 24px;
+    height: 24px;
+    margin-left: auto;
+    background-image: url("./images/edit.svg");
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-size: cover;
+}
+
