@@ -62,13 +62,11 @@ record.onresult = function (evt) {
     const new_date = new Date();
     const new_time = new_date.getHours();
     const new_minutes = new_date.getMinutes();
-    let my_obj =  [   
-        {
-            id:my_Array2.length ? my_Array2.length+1 : 1,
-            title:myplan,
-            time:`${new_time} : ${new_minutes}`,
-        },
-    ] 
+    let my_obj =  {
+        id:my_Array2.length ? my_Array2.length+1 : 1,
+        title:myplan,
+        time:`${new_time} : ${new_minutes}`,
+    }
     my_Array2.push(my_obj);
     render(my_Array2);
 }
